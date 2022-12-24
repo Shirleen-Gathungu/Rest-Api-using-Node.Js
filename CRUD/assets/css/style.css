@@ -1,0 +1,41 @@
+*{
+    background-color: yellow;
+}
+
+button{
+    margin-top: 11%;
+    margin-left: 5%;
+    padding: 8px;
+    border-radius: 11px;
+   
+}
+
+.table{
+    padding-top:3%;
+    padding-left: 25%;   
+  
+}
+
+ 
+table, td, th {
+    border: 1px solid black;
+     
+    }
+     
+    table {
+    border-collapse: collapse;
+    width: 91%;
+    margin-top: 15px;
+    margin-left: 63px;
+     
+     
+    }
+    th{
+    padding: 15px 12px;
+     
+    }
+    td {
+    text-align: center;
+    padding: 15px 12px;
+     
+    }
