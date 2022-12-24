@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 var schema = new mongoose.Schema({
     name:{
-        type:Array,
+        type:String,
 
     },
     lastname:{
@@ -11,7 +11,7 @@ var schema = new mongoose.Schema({
     },
     
     email:{
-        type:Array,
+        type:String,
         lowercase:true,
         unique: true
     

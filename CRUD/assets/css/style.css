@@ -1,13 +1,16 @@
 *{
-    background-color: yellow;
+    background-color: whitesmoke;
 }
 
 button{
-    margin-top: 11%;
+    margin-top: 1%;
     margin-left: 5%;
     padding: 8px;
-    border-radius: 11px;
+    border-radius: 7px;
    
+}
+button a{
+    text-decoration: none;
 }
 
 .table{
