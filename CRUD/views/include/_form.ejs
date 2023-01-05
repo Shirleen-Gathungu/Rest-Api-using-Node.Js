@@ -18,24 +18,41 @@
 
 <div class="new_user">
 <div class="form-group">
-<label for="name" class="text-light">First Name</label>
-<input type="text" name="name" placeholder="Enter name">
+<!-- <label for="name" class="text-light">First Name</label>
+<input type="text" name="name" placeholder="Enter name"> -->
+
+<label>First Name</label>
+          <input type="text" placeholder="Enter First Name" name="firstName" value="<%=(typeof inputData!='undefined')? inputData.firstName:''%>">
+           <p style="color: red;"><%=(typeof errors!='undefined' && typeof errors.firstName!='undefined' )? errors.firstName.msg:''%></p>
 
 </div>
 <div class="form-group">
-    <label for="name" class="text-light">Last Name</label>
-    <input type="text" name="name" placeholder="Enter Lastname">
+    <!-- <label for="name" class="text-light">Last Name</label>
+    <input type="text" name="name" placeholder="Enter Lastname"> -->
+
+    <label>Last Name</label>
+          <input type="text" placeholder="Enter Last Name" name="lastName" value="<%=(typeof inputData!='undefined')? inputData.lastName:''%>">
+          <p style="color: red;"><%=(typeof errors!='undefined' && typeof errors.lastName!='undefined' )? errors.lastName.msg:''%></p>
     </div>  
 
 <div class="form-group">
-    <label for="email" class="text-light">Email</label>
-    <input type="text" name="email" value="" placeholder="example@gmail.com">
+    <!-- <label for="email" class="text-light">Email</label>
+    <input type="text" name="email" value="" placeholder="example@gmail.com"> -->
+
+    <label>Email Address</label>
+    <input type="email" placeholder="Enter Email Address" name="emailAddress" value="<%=(typeof inputData!='undefined')? inputData.emailAddress:''%>">
+    <p style="color: red;"><%=(typeof errors!='undefined' && typeof errors.emailAddress!='undefined' )? errors.emailAddress.msg:''%></p>
     </div>
 
     <div class="form-group">
-        <label for="password" class="text-light">Password</label>
-        <input type="password" name="password" value="" placeholder="Enter Password">
+        <!-- <label for="password" class="text-light">Password</label>
+        <input type="password" name="password" value="" placeholder="Enter Password"> -->
+
+        <label>Password</label>
+        <input type="password" placeholder="Enter Password" name="password">
+        <p style="color: red;"><%=(typeof errors!='undefined' && typeof errors.password!='undefined' )? errors.password.msg:''%></p>
         </div>
+
     
 
     <div class="form-group">

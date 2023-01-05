@@ -1,11 +1,12 @@
-<%for(var i=0;i < users.length;i++){ %>
-<tr>
+<%for(var i=0;i< users.length;i++){ %>
+<tr>    
     <td><%=i + 1%></td>
-    <td><%=users[i].name%></td>
+    <td><%=users[i].firstname%></td>
     <td><%=users[i].lastname%></td>
     <td><%=users[i].email%></td>
     <td><a href="/update-user?id=<%=users[i]._id%>">Edit details</a></td>
     <td><a href="">Delete Details</a></td>
-    
+  
 </tr>
-<% } %>
+<% } %>     
+
